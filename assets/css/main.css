@@ -1195,10 +1195,13 @@ input[type="radio"] + label:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
+    /* font-size: 64px;
+    height: 64px;
+    width: 64px; */
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
-    line-height: 1;
+    line-height: 200;
     text-transform: none !important;
     font-family: 'Font Awesome 5 Free';
     font-weight: 400; }
@@ -1773,8 +1776,8 @@ button,
       margin: 0 0 2em 0; }
       .posts article .image img {
         display: block;
-        max-width: 500px;
-        max-height: auto; }
+        max-width: auto;
+        max-height: 330px; }
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
