@@ -1778,6 +1778,10 @@ button,
         display: block;
         max-width: auto;
         max-height: 330px; }
+      .posts article .imagebig img {
+        display: block;
+        max-width: 100%;
+        max-height: auto; }
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
