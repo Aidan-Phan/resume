@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src = "script.js" defer></script>
 	</head>
 	<body class="is-preload">
 
@@ -36,7 +37,7 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Heya, this is my silly little website!</h1>
+											<h1>Heya, this is my website!</h1>
 											<p>- Aidan Phan</p>
 										</header>
 										<p>I do a lot of varied tasks and I wanted a place to compile it all. </p>
@@ -90,10 +91,17 @@
 							<!-- Section -->
 								<section>
 									<header class="major" id="posts">
-										<h2>Some stuff that I do!</h2>
+										<ul id = "layered">
+											<li><h2 data-tab-target = "#posts1" class="selected">Some stuff that I do!</h2></li>
+											<li><h2 data-tab-target = "#articles1">Projects!</h2></li>
+										</ul>
+										
 									</header>
-									<div class="posts">
-										<article>
+									<!-- <p data-tab-target = "#asdf">AAAAAAAAAAA</p>
+									<p id = "asdf" data-tab-content>asfddddddddddddddddsadfasdfasdfasdfasdf</p>
+									<p id = "asdf" data-tab-content>asfddddddddddddddddsadfasdfasdfasdfasdf</p> -->
+									<div data-tab-content id = "posts1" class="active posts">
+										<article id = "bigposts">
 											<a href="https://cyberfwd.com/" class="image"><img src="images/CyberForward.png" alt="" /></a>
 											<h3>Junior Cybersecurity Consultant</h3>
 											<p>Worked as a junior cybersecurity consultant for CyberForward on the non-profits United Way Monterey County and United Way Orange County.</p>
@@ -102,16 +110,16 @@
 											</ul>
 										</article>
 
-										<article>
+										<article id = "bigposts">
 											<a href="https://www.hbhsdesign.com/" class="image"><img src="images/Defining the Gray (Gray, Orange).png" alt="HBHS Business and design website" /> </a>
 											<h3>Chief of Staff at HBHS Business and Design</h3>
-											<p>As the Chief of Staff, I used by professional background in cybersecurity to create formal internal policies, streamlined process documents, and a structured foundation for the next generations. <br><a href="https://www.hboilers.com/apps/news/article/1904004">Article covering this program.</a></p>
+											<p>As the Chief of Staff, I used by professional background in cybersecurity to create formal internal policies, streamlined process documents, and a structured foundation for the next generations. <br><a href="https://www.hboilers.com/apps/news/article/1904004" target="_self">Article covering this program.</a></p>
 											<ul class="actions">
 												<li><a href="https://www.hbhsdesign.com/" class="button">HBHS BaD</a></li>
 											</ul>
 										</article>
 
-										<article>
+										<article id = "bigposts">
 											<a href="#" class="image"><img src="images/LunaWhite0.3.png" alt="" /></a>
 											<h3>Designing and UI/UX</h3>
 											<p>I've created multiple brand guides, icons, posters, flyers, and website designs. I created the demo of <a href="flu.com">flu.com</a> in Webflow which is currently live.</p>
@@ -120,48 +128,66 @@
 											</ul>
 										</article>
 
-										<article>
+										<article id = "bigposts">
 											<a href="#" class="image" style="justify-content: center;"><img src="images/ucscfencing.JPG" alt="fencing photo"  style="margin:auto;justify-content:center;display:flex;"/></a>
 											<h3>Fencing</h3>
-											<p>I've been recently (end of winter quarter '25) getting into fencing, placing 3rd in the <a href="https://www.fencingtimelive.com/events/results/941A041FED554B12978B7FE70C68EFA0">UCSC tournament</a> with 9 days of experience.</p>
+											<p>I've been recently (end of winter quarter '25) getting into fencing, placing 3rd in the <a href="https://www.fencingtimelive.com/events/results/941A041FED554B12978B7FE70C68EFA0" target="_self">UCSC tournament</a> with 9 days of experience.</p>
 											<ul class="actions">
-												<li><a href="https://www.fencingtimelive.com/events/results/941A041FED554B12978B7FE70C68EFA0" class="button">Tournament Link</a></li>
+												<li><a target="_self" href="https://www.fencingtimelive.com/events/results/941A041FED554B12978B7FE70C68EFA0" class="button">Tournament Link</a></li>
 											</ul>
 										</article>
 
-										<article>
+										<article id = "bigposts">
 											<a href="https://hbslick.com/9756/features/dont-touch-that-dial-mmets-retrofest-197-8/" class="image" width="500px" height="330"><img src="images/retro24daytwo_2517.JPG" alt="music" /></a>
 											<h3>Performing and Recording Music</h3>
-											<p>I have played guitar for about 4 years, sang for 2, and have performed as a closer for large concerts. This picture was from <u><i>Retrofest 197.8</i></u><br><a href="https://hbslick.com/9756/features/dont-touch-that-dial-mmets-retrofest-197-8/">Article covering this show.</a></p>
+											<p>I have played guitar for about 4 years, sang for 2, and have performed as a closer for large concerts. This picture was from <u><i>Retrofest 197.8</i></u><br><a href="https://hbslick.com/9756/features/dont-touch-that-dial-mmets-retrofest-197-8/" target="_self">Article covering this show.</a></p>
 											<ul class="actions">
-												
-												<li><a href="https://www.hbapa.org/" class="button">MMET</a></li>
+												<li><a target="_self" href="https://www.hbapa.org/" class="button">MMET</a></li>
 											</ul>
+											
 										</article>
 										
-										<article>
-											<a href="https://www.youtube.com/watch?v=PI7BPuGW0D0" class="image"><img src="images/010cb266-a804-4232-adf8-7153974d1f90.png" alt="Team Montage" /></a>
-											<h3>Professional Gamer and Head Coach in Esports</h3>
-											<p>While I'm currently the head coach for CWU Esports Overwatch 2, I have competed in Tier 3 and collegiate tournaments. As team captain, my team won #1 in Pacific Youth and #2 Nationally.<br> <a href="https://www.hboilers.com/apps/news/article/1928904">Article covering my club.</a></p>
-											<ul class="actions">
-												<li><a href="https://www.hboilers.com/apps/news/article/1928904" class="button">Article</a></li>
-											</ul>
-										</article>
-
-										<article>
+										<article id = "bigposts">
 											<a href="https://www.instagram.com/ucscjugger/" class="image" style="justify-content: center;"><img src="images/Juggers.JPG" alt="UCSC Jugger Instagram" /></a>
 											<h3>Jugger</h3>
 											<p>Founder and co-captain of UCSC <a href="https://juggercouncil.org/en/">Jugger</a>. President of the UCSC Belegrath and Jugger Association, bringing 2 teams of 8 consistently to every Jugger tournament. <br> <a href="https://www.instagram.com/ucscjugger/">Our Insta!</a></p>
 											
 											<ul class="actions">
 												
-												<li><a href="https://www.instagram.com/ucscjugger/" class="icon brands fa-instagram fa-lg button">Insta</a></li>
+												<li><a target="_self" href="https://www.instagram.com/ucscjugger/" class="icon brands fa-instagram fa-lg button">Insta</a></li>
 												
 											</ul>
 										</article>
 										
+										<article id = "bigposts">
+											<a href="https://www.youtube.com/watch?v=PI7BPuGW0D0" class="image"><img src="images/010cb266-a804-4232-adf8-7153974d1f90.png" alt="Team Montage" /></a>
+											<h3>Professional Gamer and Head Coach in Esports</h3>
+											<p>While I'm currently the head coach for CWU Esports Overwatch 2, I have competed in Tier 3 and collegiate tournaments. As team captain, my team won #1 in Pacific Youth and #2 Nationally.<br> <a href="https://www.hboilers.com/apps/news/article/1928904">Article covering my club.</a></p>
+											<ul class="actions">
+												<li><a target="_self" href="https://www.hboilers.com/apps/news/article/1928904" class="button">Article</a></li>
+											</ul>
+										</article>
+
 										
 										
+										
+										
+									</div>
+
+									<div data-tab-content id = "articles1" class="articles">
+										<article>
+								
+											<h3>FOW Website Creation</h3>
+											<p>Co-created the <a href="https://jugger.studentorg.berkeley.edu/" target="_blank">Fog of War '25</a> website, with the help of <a href="https://reid.xz.ax/" target="_blank">Reid Dye</a>.  </p>
+											<p>Made the backend work and talk with the HTML using SQLite3 and Python interpretation to display matches live. All data was stored, used, and updated with a SQL database. Admin and ref accounts were allowed to communicate only after login.<br><br>SQL injection proof too &lt;3. </p>
+											
+											<ul class="actions">
+												
+												<li><a href="https://jugger.studentorg.berkeley.edu/" target="_blank" class="icon brands fa-website fa-lg button">Website</a></li>
+												
+											</ul>
+										</article>
+
 									</div>
 								</section>
 

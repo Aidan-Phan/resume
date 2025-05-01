@@ -4,6 +4,26 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('active')
+        })
+        target.classList.add('active')
+		
+		tabs.forEach(tab =>{
+            tab.classList.remove('selected')
+			
+        })
+		tab.classList.add('selected')
+		
+    })
+})
+
 (function($) {
 
 	var	$window = $(window),

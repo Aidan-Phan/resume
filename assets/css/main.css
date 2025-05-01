@@ -5,6 +5,57 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+[data-tab-content]{
+  display:none !important;
+}
+
+[data-tab-target]{
+  cursor:pointer;
+}
+
+.articles{
+  margin: 0 0 2em 0;
+  padding: 2em 0.75em 0.5em 0; 
+  border-top: solid 2px rgba(210, 215, 217, 0.75); 
+  border-bottom: solid 2px rgba(210, 215, 217, 0.75); 
+}
+
+.selected{
+  display: flex;
+  /* margin: 0 0 2em 0;
+  padding: 0 0.75em 0.5em 0;  */
+  border-bottom: solid 3px #999fff;
+}
+
+.active[data-tab-content]{
+  font:inherit;
+  display:flex !important;
+}
+
+#layered{
+  width:auto;
+  display:flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0 0.75em 0.5em 0; 
+  /* width: 1000px; */
+}
+#layered li:first-child{
+  padding: 0 20em .02em 0 ;
+  border-right: solid 2px rgba(210, 215, 217, 0.75); 
+}
+
+
+#layered li{
+  display:inline;
+}
+
+/* #posts1{
+  display:none;
+} */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -106,6 +157,8 @@ body, input, select, textarea {
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
       font-size: 9pt; } }
+
+
 
 a, iframe {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -999,7 +1052,7 @@ header p {
   text-transform: uppercase; }
 
 header.major > :last-child {
-  border-bottom: solid 3px #999fff;
+
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
