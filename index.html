@@ -37,7 +37,7 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Heya, this is my website!</h1>
+											<h1 class="">Heya, this is my website!</h1>
 											<p>- Aidan Phan</p>
 										</header>
 										<p>I do a lot of varied tasks and I wanted a place to compile it all. </p>
@@ -92,14 +92,12 @@
 								<section>
 									<header class="major" id="posts">
 										<ul id = "layered">
-											<li><h2 data-tab-target = "#posts1" class="selected">Some stuff that I do!</h2></li>
-											<li><h2 data-tab-target = "#articles1">Projects!</h2></li>
+											<li id="outer"><h2 data-tab-target = "#posts1" class="selected">Some stuff that I do!</h2></li>
+											<li id="outer"><h2 data-tab-target = "#articles1" class="hover-underline">Projects!</h2></li>
 										</ul>
 										
 									</header>
-									<!-- <p data-tab-target = "#asdf">AAAAAAAAAAA</p>
-									<p id = "asdf" data-tab-content>asfddddddddddddddddsadfasdfasdfasdfasdf</p>
-									<p id = "asdf" data-tab-content>asfddddddddddddddddsadfasdfasdfasdfasdf</p> -->
+									
 									<div data-tab-content id = "posts1" class="active posts">
 										<article id = "bigposts">
 											<a href="https://cyberfwd.com/" class="image"><img src="images/CyberForward.png" alt="" /></a>
@@ -158,7 +156,7 @@
 												
 											</ul>
 										</article>
-										
+
 										<article id = "bigposts">
 											<a href="https://www.youtube.com/watch?v=PI7BPuGW0D0" class="image"><img src="images/010cb266-a804-4232-adf8-7153974d1f90.png" alt="Team Montage" /></a>
 											<h3>Professional Gamer and Head Coach in Esports</h3>
@@ -174,12 +172,50 @@
 										
 									</div>
 
-									<div data-tab-content id = "articles1" class="articles">
-										<article>
+									<div data-tab-content id = "articles1" class="mini-posts">
+
+										<article id = "bigposts">
 								
-											<h3>FOW Website Creation</h3>
+											<h3>Fog Of War '25 Website Creation</h3>
 											<p>Co-created the <a href="https://jugger.studentorg.berkeley.edu/" target="_blank">Fog of War '25</a> website, with the help of <a href="https://reid.xz.ax/" target="_blank">Reid Dye</a>.  </p>
 											<p>Made the backend work and talk with the HTML using SQLite3 and Python interpretation to display matches live. All data was stored, used, and updated with a SQL database. Admin and ref accounts were allowed to communicate only after login.<br><br>SQL injection proof too &lt;3. </p>
+											
+											<ul class="actions">
+												
+												<li><a href="https://jugger.studentorg.berkeley.edu/" target="_blank" class="icon brands fa-website fa-lg button">Website</a></li>
+												
+											</ul>
+
+										</article>
+
+										<br>
+
+										<article id = "bigposts">
+								
+											<h3>Fog Of War '25</h3>
+											<p>Brought 17 players from UCSC to the Fog Of War '25 Jugger tournament. We made 2 teams, Luna Limax and Luna Climax. We placed 10th and 11th out of 16 teams which I consider a massive success, considering this is the second tournament the team has attended, with this being the first for around 5 of the players.</p>
+											<p>I was captain of Luna Limax and was also in charge of transportation, housing, and sports equipment repair. </p>
+											<a class="image"><img style="width:33em; height:25.78125em;" src="images/Jugger_FOW.jpg" alt="" /></a>
+											<a class="image"><img style="width:33em; height:22em;" src="images/FoW20253.JPG" alt="" /></a>
+											<a class="image"><img style="width:33em; height:22em;" src="images/FoW20254.JPG" alt="" /></a>
+											<br>
+											
+											
+											<ul class="actions">
+												
+												<li><a href="https://jugger.studentorg.berkeley.edu/" target="_blank" class="icon brands fa-website fa-lg button">Website</a></li>
+												
+											</ul>
+
+										</article>
+
+										<br>
+
+										<article id = "bigposts">
+								
+											<h3>Godot Topdown Game</h3>
+											<p>Coded a<a href="https://github.com/Aidan-Phan/godot-topdown" target="_blank"> topdown shooter</a> in Godot!</p>
+											<p>Could be optimized further, but helped with familiarity of Godot as a whole.</p>
 											
 											<ul class="actions">
 												

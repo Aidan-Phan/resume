@@ -12,15 +12,17 @@ tabs.forEach(tab =>{
         const target = document.querySelector(tab.dataset.tabTarget)
         tabContents.forEach(tabContent =>{
             tabContent.classList.remove('active')
+			
         })
         target.classList.add('active')
 		
 		tabs.forEach(tab =>{
+			tab.classList.add('hover-underline')
             tab.classList.remove('selected')
 			
         })
 		tab.classList.add('selected')
-		
+		tab.classList.remove('hover-underline')
     })
 })
 
